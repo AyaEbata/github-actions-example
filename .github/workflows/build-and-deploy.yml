@@ -32,6 +32,6 @@ jobs:
         path: build/reports/tests/test/
 
     - name: Publish package
-      uses: ./gradlew publish
+      run: ./gradlew publish
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
